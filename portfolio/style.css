@@ -1,0 +1,186 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 15px 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo span {
+  display: block;
+  font-size: 12px;
+  color: #bbb;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #00aaff;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background: #624141;
+  color: #ffffff;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #00aaff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero-img img {
+  width:250px;
+  border-radius: 10px;
+}
+
+
+.about {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.about h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+}
+
+.about .btn {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+.skill {
+  text-align: center;
+  padding: 60px 40px;
+  background-color: #444;
+}
+.skills-list {
+  list-style-position: inside;  /* bullets closer to text */
+  margin: 0;
+  padding: 0;
+}
+
+.skills-list li {
+  opacity: 0;                   /* hidden at first */
+  transform: translateY(20px);  /* slightly moved down */
+  animation: fadeInUp 0.6s forwards;
+}
+
+
+.skills-list li:nth-child(1) { animation-delay: 0.2s; }
+.skills-list li:nth-child(2) { animation-delay: 0.6s; }
+.skills-list li:nth-child(3) { animation-delay: 1s; }
+.skills-list li:nth-child(4) { animation-delay: 1.4s; }
+.skills-list li:nth-child(5) { animation-delay: 1.8s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.Education {
+  text-align: center;   
+}
+
+.Education ul {
+   
+  list-style-type: disc;   
+  padding-left: 20px;
+}
+
+.Education ul ul {
+  list-style-type: circle; 
+  padding-left: 20px;
+}
+
+.Education h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.Education {
+  text-align: center;  
+}
+
+.Education ul {
+  list-style-position: inside; 
+  padding-left: 0;     
+  display: inline-block; 
+  text-align: left;    
+}
+
+.Education ul ul {
+  list-style-type: circle;
+  padding-left: 20px;  
+}
+.Contact {
+  text-align: center;
+  padding: 60px 40px;
+  background-color: #444;
+}
